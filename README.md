@@ -26,7 +26,7 @@ CREATE TABLE libros (
 
 Ejecuta el codigo presionando el boton continuar
 
-###Insertar los primeros 2 libros
+### Insertar los primeros 2 libros
 - Una vez creada la tabla, vuelve abrir la seccion SQL
 - Escribe las siguientes lineas de codigo, para agregar libros al registro
 

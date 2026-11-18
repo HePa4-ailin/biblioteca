@@ -1,3 +1,12 @@
+/**
+ * Alterna el estado de disponibilidad de un libro específico (Disponible <-> Prestado).
+ * 
+ * @param {number} $_POST['id'] - Identificador único del libro a modificar.
+ * @param {number} $_POST['actual'] - Estado de disponibilidad actual (1 para disponible, 0 para prestado).
+ * @returns {void} Actualiza la base de datos y redirige a index.php.
+ * @throws {Exception} Si ocurre un error de conexión o la consulta de actualización falla.
+ */
+
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id']) && isset($_POST['actual'])) {
     $host = "fdb1029.awardspace.net"; // Reemplaza XX por el número de tu servidor
@@ -12,12 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id']) && isset($_POST[
     }
 
     $id = intval($_POST['id']);
-    $estado_actual = intval($_POST['actual']);
+    $estadoActual = intval($_POST['actual']);
 
     // Si estaba disponible (1), ahora será prestado (0). Si estaba prestado (0), será disponible (1).
-    $nuevo_estado = ($estado_actual === 1) ? 0 : 1;
+    $nuevoEstado = ($estadoActual === 1) ? 0 : 1;
 
-    $sql = "UPDATE libros SET disponible = $nuevo_estado WHERE id = $id";
+    $sql = "UPDATE libros SET disponible = $nuevoEstado WHERE id = $id";
 
     if ($conexion->query($sql) === TRUE) {
         // Redirecciona de vuelta con un parámetro de éxito de actualización

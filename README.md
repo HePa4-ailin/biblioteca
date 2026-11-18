@@ -1,6 +1,6 @@
-#Sistema de libreria
+# Sistema de libreria
 ---
-###Creacion de archivos
+### Creacion de archivos
 1. Crea la carpeta llamado biblioteca
 2. Crea el archivo index.php
 3. Crea el archivo guardar.php
@@ -8,7 +8,7 @@
 5. Crea el archivo styles.css
 6. Despues crea el archivo cambiarEstado.php
 
-###Crear la base de datos y Tabla de registro de libros
+### Crear la base de datos y Tabla de registro de libros
 **Ingresa a la siguiente pagina:**
 [awardspace](https://cp1.awardspace.net/domain-manager/)
 ~~Crea una base de datos llamada libreria, si ya tienes omite este paso~~

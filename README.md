@@ -1,6 +1,17 @@
 # Sistema de libreria
+fecha: 18 de noviembre 2026
 ---
 ![libreria](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1g-DDwa3p_uy_-Bz2UDLfX3cDERjpAoBJq_5-yIlkqQ&s=10)
+
+Esta pagina  de sistema de  librería esta diseñada para agilizar y digitalizar la administración básica de una biblioteca escolar.
+
+como usar:
+1. da clic en el espacio titulo y escribe el nombre de libro: ejemplo noches blancas
+2. hacer clic en el segundo campo e ingresar el nombre y apellido del autor. ejemplo Fiodor dostyoveski
+3. hacer clic en el tercer campo e introducir el código numérico que identifica al libro. ejemplo 978-4567891230
+4. presionar el botón verde “Guardar Libro”.
+5. en el lado derecho aparecerá el libro agregado en la tabla inventario
+
 ### Creacion de archivos
 1. Crea la carpeta llamado biblioteca
 2. Crea el archivo index.php
@@ -12,7 +23,9 @@
 ### Crear la base de datos y Tabla de registro de libros
 **Ingresa a la siguiente pagina:**
 [awardspace](https://cp1.awardspace.net/domain-manager/)
+
 ~~Crea una base de datos llamada libreria, si ya tienes omite este paso~~
+
 Abre phpmyAdmin de awardspace y  ve a la seccion SQL
 Escribe el siguiente codigo para crear la tabla:
 ```sql

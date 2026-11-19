@@ -13,6 +13,7 @@ if ($conexion->connect_error) {
 
 // Obtener los libros existentes
 $resultado = $conexion->query("SELECT * FROM libros ORDER BY id DESC");
+
 ?>
 <!DOCTYPE html>
 <html lang="es">

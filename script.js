@@ -33,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Detectar si venimos de un registro exitoso mediante la URL
     const URLParams = new URLSearchParams(window.location.search);
+    
     if (URLParams.get('success') === '1') {
         // Limpiar el parámetro de la URL de forma estética
         window.history.replaceState({}, document.title, window.location.pathname);

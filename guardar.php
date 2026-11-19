@@ -31,6 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conexion->query($sql) === TRUE) {
         // Redireccionar de vuelta a la página principal si se guardó con éxito
         header("Location: index.php?success=1");
+        
     } else {
         echo "Error al guardar el libro: " . $conexion->error;
     }

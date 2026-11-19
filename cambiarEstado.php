@@ -36,6 +36,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id']) && isset($_POST[
     }
 
     $conexion->close();
+    
 } else {
     header("Location: index.php");
 }

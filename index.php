@@ -1,4 +1,5 @@
 <?php
+
 // Cambia estos datos con los que te proporcione AwardSpace en tu "Database Manager"
 $host = "fdb1029.awardspace.net"; // Reemplaza XX por el número de tu servidor
 $usuario = "4794856_pruebadb";

@@ -40,4 +40,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['id']) && isset($_POST[
 } else {
     header("Location: index.php");
 }
+
 ?>

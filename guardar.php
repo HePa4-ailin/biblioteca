@@ -10,6 +10,7 @@
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
     $host = "fdb1029.awardspace.net"; // Reemplaza XX por el número de tu servidor
     $usuario = "4794856_pruebadb";
     $password = "salove2410";

@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('formLibro');
 
     if (form) {
+        
         // Validación interactiva antes de enviar los datos al servidor
         form.addEventListener('submit', (e) => {
             const tituloLibro = document.getElementById('titulo').value.trim();
